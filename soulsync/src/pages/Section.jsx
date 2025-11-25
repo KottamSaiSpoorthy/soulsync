@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { useState } from "react"
+=======
+import { useState,useEffect } from "react"
+>>>>>>> d4a93cc1f69a0004d0858d5e266883d8bf60b35b
 import Header from "../components/Header.jsx"
 import Footer from "../components/Footer.jsx"
 import Nav from "../components/Nav.jsx"
@@ -44,8 +48,20 @@ function Section(){
                     </div>
 
                     <div className="chat">
+<<<<<<< HEAD
                         <textarea id="input" placeholder="hi, do you want to talk...."  value={input} onChange={(e)=> setInput(e.target.value)} />
                         <button id="btn" className="btn" onClick={handleSend}>SEND</button>
+=======
+                        <textarea 
+                        id="input" 
+                        placeholder="hi, do you want to talk...."  
+                        value={input} 
+                        onChange={(e)=> setInput(e.target.value)} 
+                        />
+                        <button id="btn" className="btn" onClick={handleSend}>
+                            SEND
+                        </button>
+>>>>>>> d4a93cc1f69a0004d0858d5e266883d8bf60b35b
                     </div>
                 </div>
                 <Footer />

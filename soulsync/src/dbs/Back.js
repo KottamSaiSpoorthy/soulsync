@@ -15,6 +15,7 @@ app.use(express.json());
 app.listen(port, () => { console.log("server connected") });
 
 app.post("/savecre", async (req, res) => {
+<<<<<<< HEAD
     const { email,FirstName,LastName,DOB,username, password } = req.body;
         const user = new info({
             email:email,
@@ -23,6 +24,12 @@ app.post("/savecre", async (req, res) => {
             DOB:DOB,
             username: username,
             Password: password
+=======
+    const { username, password } = req.body;
+        const user = new info({
+            username: username,
+            password: password
+>>>>>>> d4a93cc1f69a0004d0858d5e266883d8bf60b35b
         });
 
         await user.save();
@@ -41,6 +48,7 @@ app.post("/savemsg",async (req,res)=>{
 
     const um = await Chat.find();
     res.json(um);
+<<<<<<< HEAD
 });
 
 app.post("/login", async (req, res) => {
@@ -57,4 +65,6 @@ app.post("/login", async (req, res) => {
     }
 
     res.json({ success: true });
+=======
+>>>>>>> d4a93cc1f69a0004d0858d5e266883d8bf60b35b
 });
