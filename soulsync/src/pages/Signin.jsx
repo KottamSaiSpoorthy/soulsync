@@ -47,7 +47,7 @@ function Signin(){
                 <label>Enter UserName:</label>
                 <input className="in" type="text" value={username} onChange={(e)=> setUsername(e.target.value)}></input>
                 <label>Set your PassWord:</label>
-                <input className="in" type="Password" value={password} onChange={(e)=> setPassword(e.target.value)}></input>
+                <input className="in" type="password" value={password} onChange={(e)=> setPassword(e.target.value)}></input>
                 <button className="fbtn" type='submit'>Sign in</button>
             </form>
         </div>
